@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int swap(int *a,int *b){
+        *b=*b+*a;
+        *a=*b-*a;
+        *b=*b-*a;
+}
+
+int main()
+{
+    int x,y;
+    cin>>x>>y;
+    swap(x,y);
+    cout<<x<<" "<<y<<endl;
+    return 0;
+}
